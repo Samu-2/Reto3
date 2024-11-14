@@ -39,4 +39,34 @@ public class Funciones1 {
 		else
 			return false;
 	}
+	public static String dimeCadenaTexto(String texto, Scanner sc) {
+		do {
+			try {
+
+				System.out.println(texto);
+				String cadena = sc.nextLine();
+
+				return cadena;
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println("Introduce un texto");
+			}
+
+		} while (true);
+	}
+	public static String nombreMasCorto(String nombre) {
+		String corta="";
+		int lenC=corta.length();
+		int len=nombre.length();
+		if (len>lenC) {
+			corta=nombre;
+		}
+		if(len<lenC)
+			corta=nombre;
+		return corta;
+			
+	
+	
+		
+	}
 }
